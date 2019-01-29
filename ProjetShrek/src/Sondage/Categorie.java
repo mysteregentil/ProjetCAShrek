@@ -1,6 +1,6 @@
 package Sondage;
 /**
-@author Groupe Shrek
+ * @author Groupe Shrek
 **/
 public class Categorie {
 	/** 
