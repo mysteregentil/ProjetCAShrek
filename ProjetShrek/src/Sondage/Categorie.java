@@ -1,21 +1,25 @@
 package Sondage;
 /**
-@author Groupe Shrek
-**/
+ * @author Groupe Shrek
+ */
+/**
+ * Classe catégorie, contient les informations sur une catégorie à qui appartiendront des sondés et des sondages
+ */
 public class Categorie {
-	/** 
-	 * identifiant de la classe Catégorie s'incrémente à chaque création d'une nouvelle catégorie
-	 * **/
+
+	/**
+	 * Attributs : intitule, description, identifiant (auto-incrémenté)
+	 */
 	static int num = 0;
 	private int id;
-	/**
-	 * Une Catégorie est composé d'un intitule et d'une description
-	 */
 	private String intitule;
 	private String description;
+	
 	/** 
 	 * constructeur de catégorie, sert pour l'ajout d'une catégorie
-	 * **/
+	 * @param intitulé (string) : intitulé de la catégorie
+	 * @param descrition (string) : description de la catégorie
+	 */
 	public Categorie(String intitule, String description){
 		num++;
 		this.id = num;
@@ -38,8 +42,8 @@ public class Categorie {
 	}
 	/**
 	 * Modification d'un intitule
-	@param intitule
-	**/
+	 * @param intitule
+	 */
 	public void setIntitule(String intitule) {
 		this.intitule = intitule;
 	}
@@ -52,8 +56,8 @@ public class Categorie {
 	}
 	/**
 	 * Modification d'une description
-	@param description
-	**/
+	 * @param description
+	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}
